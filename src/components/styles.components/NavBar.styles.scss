@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Rubik+Mono+One&display=swap');
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      .logo-img {
+        width: 32px;
+        height: 32px;
+        margin: 10px;
+      }
+    }
+
+    .menu {
+
+      .link {
+        margin: 10px;
+        text-decoration: none;
+        color: #0a64d1;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
