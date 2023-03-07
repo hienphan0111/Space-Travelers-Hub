@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Navbar />}>
+          <Route path="/" element={<Navbar />}>
             <Route index element={<Rockets />} />
-            <Route path='/mission' element={<Missions />} />
-            <Route path='/my-profile' element={<MyProfile />} />
+            <Route path="/mission" element={<Missions />} />
+            <Route path="/my-profile" element={<MyProfile />} />
           </Route>
         </Routes>
       </BrowserRouter>
