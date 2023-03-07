@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import './styles.components/Mission.style.scss';
 
 function Mission({ mission }) {
   const { description, mission_name: missionName } = mission;
   return (
-    <div>
+    <div className="mission">
       <p>{missionName}</p>
       <span>{description}</span>
       <button type="button">Click</button>
