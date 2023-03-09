@@ -1,29 +1,89 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { joinMission, leaveMission } from 'redux/missions/missions';
 import './styles.components/Mission.style.scss';
 
 function Mission({ mission }) {
-  const { description, mission_name: missionName } = mission;
+  const {
+    description,
+    missionName,
+    reserved,
+    missionId,
+  } = mission;
+
+  const dispatch = useDispatch();
+
+  const joinHandler = (e) => {
+    const { id } = e.target;
+    dispatch(joinMission(id));
+  };
+
+  const leaveHandler = (e) => {
+    const { id } = e.target;
+    dispatch(leaveMission(id));
+  };
   return (
-    <div className="mission">
-      <p>{missionName}</p>
-      <span>{description}</span>
-      <button type="button">Click</button>
+    <div className="mission table-template">
+      <h3 className="t-cell">{missionName}</h3>
+      <span className="t-cell">{description}</span>
+      <span className="t-cell center">
+        <button
+          id={missionId}
+          type="button"
+          onClick={joinHandler}
+          style={
+            reserved ? {
+              backgroundColor: 'lightBlue',
+              color: '#000',
+              fontSize: '10px',
+            } : {
+              backgroundColor: 'gray',
+              color: 'white',
+              fontSize: '10px',
+            }
+          }
+        >
+          {reserved ? 'Active Member' : 'NOT A MEMBER'}
+        </button>
+      </span>
+      <span className="t-cell center">
+        <button
+          type="button"
+          onClick={leaveHandler}
+          id={missionId}
+          style={
+            reserved ? {
+              color: 'red',
+              border: '1px solid red',
+            } : {
+              color: '#000',
+              border: '1px solid #000',
+            }
+          }
+        >
+          {reserved ? 'Leave Mission' : 'Join Mission'}
+        </button>
+      </span>
     </div>
   );
 }
 
 Mission.defaultProps = {
   mission: {
-    mission_name: '',
+    missionName: '',
     description: '',
+    reserved: false,
+    missionId: '',
   },
 };
 
 Mission.propTypes = {
   mission: PropTypes.shape(
     {
-      mission_name: PropTypes.string,
+      missionName: PropTypes.string,
       description: PropTypes.string,
+      reserved: PropTypes.bool,
+      missionId: PropTypes.string,
       // flickr_images: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])),
     },
   ),
