@@ -1,3 +1,21 @@
 .rocket {
-  margin: 0;
+  display: flex;
+  margin: 2rem 5rem;
+
+  ​ img {
+    width: 240px;
+  }
+
+  ​ .info {
+    margin: 0 30px;
+
+    ​ h3 {
+      margin: 0 20px 10px 0;
+    }
+
+    p {
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+  }
 }
