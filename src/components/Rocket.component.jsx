@@ -14,7 +14,7 @@ function Rockets({ rocket }) {
     </div>
   );
 }
-Rocket.defaultProps = {
+Rockets.defaultProps = {
   rocket: {
     name: '',
     description: '',
@@ -22,7 +22,7 @@ Rocket.defaultProps = {
     imgUrl: '',
   },
 };
-Rocket.propTypes = {
+Rockets.propTypes = {
   rocket: PropTypes.shape(
     {
       id: PropTypes.string,
