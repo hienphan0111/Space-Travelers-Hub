@@ -11,7 +11,6 @@ function Rocket() {
       dispatch(getRockets());
     }
   }, [status]);
-​
   return (
     <div className="rockets-container">
       {

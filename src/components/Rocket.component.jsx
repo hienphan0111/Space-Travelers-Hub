@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import './styles.components/Rocket.styles.scss';
-​
 function Rockets({ rocket }) {
   const { name, description, imgUrl } = rocket;
   return (
@@ -14,7 +13,6 @@ function Rockets({ rocket }) {
     </div>
   );
 }
-​
 Rocket.defaultProps = {
   rocket: {
     name: '',
@@ -33,5 +31,5 @@ Rocket.propTypes = {
     },
   ),
 };
-​
+
 export default Rockets;
