@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { getRockets } from 'redux/rockets/rockets';
 import Rocket from 'components/Rocket.component';
 
-function Rocket() {
+function Rockets() {
   const { rockets, status } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -11,6 +11,7 @@ function Rocket() {
       dispatch(getRockets());
     }
   }, [status]);
+
   return (
     <div className="rockets-container">
       {
@@ -21,5 +22,5 @@ function Rocket() {
     </div>
   );
 }
-​
-export default Rocket;
+
+export default Rockets;

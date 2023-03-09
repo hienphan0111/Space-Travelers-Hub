@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './styles.components/Rocket.styles.scss';
+
 function Rockets({ rocket }) {
   const { name, description, imgUrl } = rocket;
   return (
