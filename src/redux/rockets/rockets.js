@@ -27,10 +27,20 @@ const rocketsSlice = createSlice({
     bookRocket: (state, action) => {
       const { payload } = action;
       const rockets = state.rockets.map((rocket) => {
-        if (rocket.id === payload) {
-          return { ...rocket, reserved: true };
+        if (rocket.id !== payload) {
+          return rocket;
         }
-        return rocket;
+        return { ...rocket, reserved: true };
+      });
+      return { ...rockets, status: 'completed' };
+    },
+    cancelRocket: (state, action) => {
+      const { payload } = action;
+      const rockets = state.rockets.map((rocket) => {
+        if (rocket.id !== payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: false };
       });
       return { ...rockets, status: 'completed' };
     },
@@ -54,8 +64,6 @@ const rocketsSlice = createSlice({
   },
 });
 
-export const { bookRocket } = rocketsSlice.actions;
-
+export const { bookRocket, cancelRocket } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
-

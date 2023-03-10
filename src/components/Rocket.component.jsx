@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookRocket } from 'redux/rockets/rockets';
+import { bookRocket, cancelRocket } from 'redux/rockets/rockets';
 import './styles.components/Rocket.styles.scss';
 
 function Rockets({ rocket }) {
@@ -14,6 +14,11 @@ function Rockets({ rocket }) {
   const dispatch = useDispatch();
 
   const bookRocketHandle = (e) => {
+    const { id } = e.target;
+    dispatch(cancelRocket(id));
+  };
+
+  const cancelRocketHandle = (e) => {
     const { id } = e.target;
     dispatch(bookRocket(id));
   };
@@ -45,7 +50,7 @@ function Rockets({ rocket }) {
         {
           reserved && (
             <button
-              onClick={bookRocketHandle}
+              onClick={cancelRocket}
               id={id}
               type="button"
               style={{
