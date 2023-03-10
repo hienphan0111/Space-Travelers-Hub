@@ -50,7 +50,7 @@ function Rockets({ rocket }) {
         {
           reserved && (
             <button
-              onClick={cancelRocket}
+              onClick={cancelRocketHandle}
               id={id}
               type="button"
               style={{
