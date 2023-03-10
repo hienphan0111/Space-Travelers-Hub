@@ -1,0 +1,44 @@
+.rocket {
+  display: flex;
+  margin: 2rem 5rem;
+
+  img {
+    width: 240px;
+  }
+
+  .info {
+    margin: 0 30px;
+
+    .i-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .book-reserved {
+      background-color: rgb(5, 144, 144);
+      margin: 5px;
+      padding: 4px;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+
+    button:hover {
+      transform: scale(1.1, 1.1);
+      cursor: pointer;
+    }
+
+    // color: rgba(165, 163, 163, 0.189)
+  }
+}

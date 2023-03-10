@@ -1,0 +1,43 @@
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem 10rem;
+
+  .mission-joined {
+    margin: 10px;
+
+    .mis-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .m-item {
+      padding: 10px 0 30px 20px;
+      border: 0.5px solid #414040d0;
+      border-bottom: none;
+    }
+
+    .m-item:last-child {
+      border-bottom: 0.5px solid #414040d0;
+    }
+  }
+
+  .rockets-booked {
+    margin: 10px;
+
+    .list-rockets {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .r-item {
+      padding: 10px 0 30px 20px;
+      border: 0.5px solid #414040d0;
+      border-bottom: none;
+    }
+
+    .r-item:last-child {
+      border-bottom: 0.5px solid #414040d0;
+    }
+  }
+}

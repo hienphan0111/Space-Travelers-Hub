@@ -1,0 +1,20 @@
+$table-border: 0.5px solid #000;
+
+.missions-container {
+  margin: 2rem 5rem;
+
+  .table-template {
+    display: grid;
+    grid-template-columns: 8rem 1fr 8rem 10rem;
+    border: $table-border;
+  }
+
+  .header {
+    span {
+      border: $table-border;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}

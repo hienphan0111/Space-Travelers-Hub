@@ -44,7 +44,7 @@ The application will allow users to book rockets and join selected space mission
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-To see the demo version, you can <a href="https://hienphan0111.github.io/space-travelers-hub/"> Click here </a>
+To see the demo version, you can <a href="https://space-travelers-hub-wheat.vercel.app/"> Click here </a>
 
 <!-- GETTING STARTED -->
 
@@ -116,6 +116,11 @@ The project was deployed which you can access this link:
 - Twitter: [@hienphan0111](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hien-phan-61097b256/)
 
+2. Joseph David
+- GitHub: [@jodavid444](https://github.com/jodavid444)
+- Twitter: [@jodavid444](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/joseph-david-01a8a5243/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -155,3 +160,10 @@ This project is contributed under [GNU 3.0](./LICENSE.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Redux.js]: https://img.shields.io/badge/Redux-20232A?style=for-the-badge&logo=redux&logoColor=violet
+[Redux-url]: http://redux.js.org
