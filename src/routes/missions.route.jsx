@@ -7,7 +7,6 @@ import './styles.routes/missions.styles.scss';
 function Missions() {
   const dispatch = useDispatch();
   const { missions, status } = useSelector((state) => state.missions);
-  console.log(missions);
   useEffect(() => {
     if (status === 'update') {
       // eslint-disable-next-line
