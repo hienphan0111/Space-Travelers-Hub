@@ -15,7 +15,6 @@ function Mission({ mission }) {
 
   const joinHandler = (e) => {
     const { id } = e.target;
-    console.log(id);
     dispatch(joinMission(id));
   };
 
