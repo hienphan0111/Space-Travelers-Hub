@@ -116,6 +116,11 @@ The project was deployed which you can access this link:
 - Twitter: [@hienphan0111](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hien-phan-61097b256/)
 
+2. Joseph David
+- GitHub: [@jodavid444](https://github.com/jodavid444)
+- Twitter: [@jodavid444](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/joseph-david-01a8a5243/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
