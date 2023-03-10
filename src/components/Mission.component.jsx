@@ -15,6 +15,7 @@ function Mission({ mission }) {
 
   const joinHandler = (e) => {
     const { id } = e.target;
+    console.log(id);
     dispatch(joinMission(id));
   };
 
@@ -27,10 +28,7 @@ function Mission({ mission }) {
       <h3 className="t-cell">{missionName}</h3>
       <span className="t-cell">{description}</span>
       <span className="t-cell center">
-        <button
-          id={missionId}
-          type="button"
-          onClick={joinHandler}
+        <span
           style={
             reserved ? {
               backgroundColor: 'lightBlue',
@@ -44,12 +42,12 @@ function Mission({ mission }) {
           }
         >
           {reserved ? 'Active Member' : 'NOT A MEMBER'}
-        </button>
+        </span>
       </span>
       <span className="t-cell center">
         <button
           type="button"
-          onClick={leaveHandler}
+          onClick={reserved ? leaveHandler : joinHandler}
           id={missionId}
           style={
             reserved ? {
