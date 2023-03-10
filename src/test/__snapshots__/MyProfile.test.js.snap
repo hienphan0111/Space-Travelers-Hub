@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render the missions list in profile page Renders the missions list in profile page correctly 1`] = `
+<div
+  className="profile-container"
+>
+  <div
+    className="mission-joined"
+  >
+    <h4>
+      My Missions
+    </h4>
+    <div
+      className="mis-list"
+    />
+  </div>
+  <div
+    className="rockets-booked"
+  >
+    <h4>
+      My Rockets
+    </h4>
+    <div
+      className="rockets-container"
+    />
+  </div>
+</div>
+`;
