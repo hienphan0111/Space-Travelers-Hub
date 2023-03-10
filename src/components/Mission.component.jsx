@@ -30,13 +30,17 @@ function Mission({ mission }) {
         <span
           style={
             reserved ? {
-              backgroundColor: 'lightBlue',
-              color: '#000',
+              backgroundColor: 'rgba(5, 144, 144, 0.7)',
+              color: '#fff',
               fontSize: '10px',
+              padding: '5px',
+              borderRadius: '5px',
             } : {
               backgroundColor: 'gray',
               color: 'white',
               fontSize: '10px',
+              padding: '5px',
+              borderRadius: '5px',
             }
           }
         >

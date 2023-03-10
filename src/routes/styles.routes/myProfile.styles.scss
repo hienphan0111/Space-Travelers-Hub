@@ -24,5 +24,21 @@
 
   .rockets-booked {
     margin: 10px;
+
+    .list-rockets {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .r-item {
+      padding: 10px 0 30px 20px;
+      border: 0.5px solid #414040d0;
+      border-bottom: none;
+    }
+
+    .r-item:last-child {
+      border-bottom: 0.5px solid #414040d0;
+    }
   }
+  
 }

@@ -22,7 +22,7 @@ function MyProfile() {
       </div>
       <div className="rockets-booked">
         <h4>My Rockets</h4>
-        <div className="rockets-container">
+        <div className="list-rockets">
           {
             rocketsBooked.map((rocket) => (
               <span key={rocket.id} className="r-item">{rocket.name}</span>

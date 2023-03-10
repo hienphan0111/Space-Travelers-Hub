@@ -13,26 +13,31 @@ function Rockets({ rocket }) {
   } = rocket;
   const dispatch = useDispatch();
 
-  const bookRocketHandle = (e) => {
-    const { id } = e.target;
-    dispatch(cancelRocket(id));
-  };
-
-  const cancelRocketHandle = (e) => {
+  const bookRocketHandler = (e) => {
+    console.log(e.target.id);
     const { id } = e.target;
     dispatch(bookRocket(id));
+  };
+
+  const cancelRocketHandler = (e) => {
+    console.log(e.target.id);
+    const { id } = e.target;
+    dispatch(cancelRocket(id));
   };
 
   return (
     <div className="rocket">
       <img src={imgUrl} alt="rocket" />
       <div className="info">
-        <h3>{name}</h3>
+        <div className="i-header">
+          { reserved && (<span className="book-reserved">Reserved</span>)}
+          <h3>{name}</h3>
+        </div>
         <p>{description}</p>
         {
           !reserved && (
             <button
-              onClick={bookRocketHandle}
+              onClick={bookRocketHandler}
               id={id}
               type="button"
               style={{
@@ -50,18 +55,18 @@ function Rockets({ rocket }) {
         {
           reserved && (
             <button
-              onClick={cancelRocketHandle}
+              onClick={cancelRocketHandler}
               id={id}
               type="button"
               style={{
-                border: 'none',
+                border: '0.5px #000 solid',
                 borderRadius: '5px',
-                backgroundColor: 'gray',
+                backgroundColor: 'rgba(165, 163, 163, 0.189)',
                 color: '#000',
                 padding: '10px',
               }}
             >
-              Cancel Rocket
+              Cancel Reservation
             </button>
           )
         }

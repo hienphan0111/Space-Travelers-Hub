@@ -32,7 +32,7 @@ const rocketsSlice = createSlice({
         }
         return { ...rocket, reserved: true };
       });
-      return { ...rockets, status: 'completed' };
+      return { rockets, status: state.status };
     },
     cancelRocket: (state, action) => {
       const { payload } = action;
@@ -42,7 +42,7 @@ const rocketsSlice = createSlice({
         }
         return { ...rocket, reserved: false };
       });
-      return { ...rockets, status: 'completed' };
+      return { rockets, status: state.status };
     },
   },
   extraReducers(builder) {
